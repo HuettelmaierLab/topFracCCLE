@@ -1,0 +1,5 @@
+distinct_mutation_CCLE_full_sparse.rds	sparse Matrix object assigning SNPs to cell lines 
+depmap_metadata.tsv	cell line meta data
+Cellosaurus_derivatives_depmap.tsv	derivatives of cell lines cell lines that are derivatives of other cell lines according to Cellosaurus
+
+data generated from ExperimentHub depmap 22Q2
