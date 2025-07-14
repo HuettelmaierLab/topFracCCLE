@@ -32,7 +32,7 @@ A data frame with the top matching cell lines, including:
 - Cell line name
 - RRID (Research Resource Identifier)
 - Number of matching SNPs
-- Total SNPs
+- Total SNPs reported for the cell line
 - Fraction of SNPs found
 
 #### Example Usage
