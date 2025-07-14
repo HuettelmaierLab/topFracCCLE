@@ -2,7 +2,7 @@
 
 # Cell Line Classification with CCLE SNP Data
 
-This script provides a function to classify a query cell line (from a VCF file) by comparing its SNPs (single nucleotide polymorphisms) to those in the Cancer Cell Line Encyclopedia (CCLE) dataset. It returns the best-matching cell lines based on the fraction of shared mutations.
+This script provides a function to classify a query cell line (from a VCF file) by comparing its SNPs (single nucleotide polymorphisms) to those in the reference Cancer Cell Line Encyclopedia (CCLE) dataset. It returns the best-matching cell lines based on the fraction of shared mutations.
 
 ## Function
 
@@ -21,10 +21,6 @@ Given a query VCF file containing sequence variants for a cell line, this functi
 - **minSNPs**: Minimum number of SNPs required in a cell line for it to be considered (default: `10`).
 - **data_dir**: Directory containing the CCLE SNP and metadata files (default: `"data/"`).
 
-#### Input Files
-
-- `distinct_mutation_CCLE_full_sparse.rds` (in `data_dir`): Sparse matrix of CCLE cell line mutations.
-- `depmap_metadata.tsv` (in `data_dir`): Metadata table for CCLE cell lines.
 
 #### Output
 
@@ -57,5 +53,3 @@ print(result)
 #### Notes
 
 - Supports both genome builds GRCh37 and GRCh38.
-- Progress is displayed during execution.
-- Future improvements may include reporting derivatives and parent cell lines.
