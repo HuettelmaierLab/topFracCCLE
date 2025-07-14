@@ -34,6 +34,8 @@ A data frame with the top matching cell lines, including:
 #### Example Usage
 
 ```r
+source("classify_cell_line_CCLE_top_mut_frac_sparse_matrix.r")
+
 result <- classify_cell_line_CCLE_top_mut_frac(
     vcf_file = "query.vcf",
     genome = "GRCh38",
