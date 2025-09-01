@@ -55,3 +55,7 @@ print(result)
 #### Notes
 
 - Supports both genome builds GRCh37 and GRCh38.
+
+#### Citation
+
+- A detailed description and evaluation can be found in our pre-print article <https://doi.org/10.1101/2025.08.22.671765>
