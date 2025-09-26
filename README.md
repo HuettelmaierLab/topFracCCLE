@@ -14,7 +14,7 @@ Given a query VCF file containing sequence variants for a cell line, this functi
 
 #### Arguments
 
-- **vcf_file**: Path to the VCF file with sequence variations for the query cell line.
+- **vcf_file**: Path to the VCF file with sequence variations for the query cell line (one sample per file, chromosome numbers need to be preceded by `"chr"`, e.g., chr1).
 - **genome**: Genome version, either `"GRCh37"` or `"GRCh38"` (default: `"GRCh38"`).
 - **lines**: An optional vector of cell line names to restrict the search. If `NULL`, all cell lines in the dataset are considered.
 - **num_out**: Number of top matching cell lines to return (default: `3`).
