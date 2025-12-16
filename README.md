@@ -58,4 +58,4 @@ print(result)
 
 #### Citation
 
-- A detailed description and evaluation can be found in our pre-print article <https://doi.org/10.1101/2025.08.22.671765>
+- A detailed description and evaluation can be found in our research article <https://doi.org/10.1016/j.csbj.2025.10.039>
