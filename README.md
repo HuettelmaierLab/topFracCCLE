@@ -15,7 +15,7 @@ Given a query VCF file containing sequence variants obtained for an RNA-seq samp
 #### Arguments
 
 - **vcf_file**: Path to the VCF file with sequence variations for the query sample (one sample per file, chromosome numbers need to be preceded by `"chr"`, e.g., chr1).
-- **genome**: Genome version, either `"GRCh37"` or `"GRCh38"` (default: `"GRCh38"`).
+- **genome**: Genome version, either `"hg19"`, `"hg38"` or `"T2T"` (default: `"hg38"`).
 - **lines**: An optional vector of cell line names to restrict the search. If `NULL`, all cell lines in the dataset are considered.
 - **num_out**: Number of top matching cell lines to return (default: `3`).
 - **minSNPs**: Minimum number of SNPs required in a cell line for it to be considered (default: `10`).
@@ -34,11 +34,11 @@ A data frame with the top matching cell lines, including:
 #### Example Usage
 
 ```r
-source("classify_cell_line_CCLE_top_mut_frac_sparse_matrix.r")
+source("classify_cell_line.r")
 
 result <- classify_cell_line_CCLE_top_mut_frac(
     vcf_file = "query.vcf",
-    genome = "GRCh38",
+    genome = "hg38",
     lines = NULL,
     num_out = 5,
     minSNPs = 15,
@@ -54,7 +54,7 @@ print(result)
 
 #### Notes
 
-- Supports both genome builds GRCh37 and GRCh38.
+- Supports human genome builds hg19, hg38 and T2T.
 
 #### Citation
 
